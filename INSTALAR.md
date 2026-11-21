@@ -11,25 +11,24 @@ Baixe em https://claude.com/claude-code, abra e entre com a sua conta do Claude.
 Copie o bloco inteiro e cole. O Claude baixa o kit, prepara o seu computador e faz a sua primeira lista.
 
 ```text
-Você vai instalar o "Radar de Contas" pra mim neste computador. Eu NÃO sou técnico: faça tudo sozinho, nunca me peça pra rodar comando no terminal nem pra editar arquivo, e explique cada passo em português simples. Mantenha uma lista de tarefas visível e vá marcando o que já fez.
+Você vai instalar o "Radar de Contas" pra mim neste computador. Eu NÃO sou técnico: faça tudo sozinho, nunca me peça pra rodar comando nem editar arquivo, e explique cada passo em português simples. Mantenha uma lista de tarefas visível e vá marcando o que já fez.
 
 1) BAIXAR O KIT
-Baixe https://github.com/johnny01010101/radar-de-contas pra minha pasta Documentos (no Windows, Documentos do meu usuário).
-Se o git estiver instalado, use git clone. Se não estiver, baixe o ZIP de https://github.com/johnny01010101/radar-de-contas/archive/refs/heads/main.zip e descompacte numa pasta "radar-de-contas".
-Depois, trabalhe sempre de dentro dessa pasta.
+   git clone https://github.com/johnny01010101/radar-de-contas.git   (na minha pasta Documentos)
+   Sem git? Baixe o ZIP do mesmo endereço (/archive/refs/heads/main.zip) e descompacte.
+   Depois, trabalhe sempre de dentro da pasta "radar-de-contas".
 
-2) PREPARAR O COMPUTADOR
-Rode scripts/ambiente.py com o Python que existir (python3 no Mac; python ou py no Windows).
-Se não houver Python 3.9 ou mais novo, instale você mesmo, de graça:
-- Windows: winget install -e --id Python.Python.3.12 (ou o instalador de python.org, marcando "Add to PATH");
-- Mac: o Python que vem com as ferramentas de linha de comando da Apple, ou o instalador de python.org.
-Rode de novo até aparecer PRONTO.
+2) PREPARAR O COMPUTADOR (só o que faltar, tudo grátis)
+   Rode scripts/ambiente.py (python3 no Mac; python ou py no Windows).
+   Sem Python 3.9+? Instale você mesmo (Windows: winget install -e --id Python.Python.3.12;
+   Mac: instalador de python.org). Rode de novo até aparecer PRONTO.
 
-3) CONHECER O MEU NEGÓCIO
-Leia o CLAUDE.md da pasta e siga as instruções dele. Comece pelo /comecar: me pergunte só o site da minha empresa, uma pergunta por vez.
+3) CONHECER O MEU NEGÓCIO (uma pergunta por vez)
+   Leia o CLAUDE.md e comece pelo /comecar: me pergunte só o site da minha empresa.
 
 4) PRIMEIRA LISTA
-Siga a ordem do CLAUDE.md (/sinais, /calibrar, /lista, /planilha) até a planilha ficar pronta. Me mostre onde ela foi salva.
+   Siga /sinais, /calibrar, /lista e /planilha até a planilha ficar pronta.
+   Me mostre onde ela foi salva.
 
 Tenha paciência comigo, suponha que eu nunca usei um terminal e use só este kit.
 ```
