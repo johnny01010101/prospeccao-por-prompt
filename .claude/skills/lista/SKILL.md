@@ -1,13 +1,13 @@
 ---
 name: lista
-description: Monta a lista de empresas da rodada. Busca sinais em paralelo (vagas, notícias, sites), confere cada fonte, checa CNPJ, descarta concorrentes, repetidas e anti-sinais, dá nota de 0 a 100, aponta o cargo provável de quem decide e grava kit/contas.csv. Use depois do /calibrar, ou quando o usuário pedir uma lista nova.
+description: Monta a lista de empresas da rodada. Busca sinais em paralelo (vagas, notícias, sites), confere cada fonte, checa CNPJ, descarta concorrentes, repetidas e anti-sinais, dá nota de 0 a 100, aponta o cargo provável de quem decide e grava dados/contas.csv. Use depois do /calibrar, ou quando o usuário pedir uma lista nova.
 ---
 
 # /lista: as contas da rodada
 
-Objetivo: de 15 a 25 contas verificadas em `kit/contas.csv`, com as descartadas e o motivo em `kit/descartadas.csv`. Melhor 10 fortes que 30 genéricas.
+Objetivo: de 15 a 25 contas verificadas em `dados/contas.csv`, com as descartadas e o motivo em `dados/descartadas.csv`. Melhor 10 fortes que 30 genéricas.
 
-Leia antes: `kit/icp.md`, `kit/sinais.md`, `kit/calibracao.md` (se existir), `referencias/fontes.md`, `referencias/nota-e-checagem.md`, `referencias/cargos-de-decisao.md`.
+Leia antes: `dados/icp.md`, `dados/sinais.md`, `dados/calibracao.md` (se existir), `referencias/fontes.md`, `referencias/nota-e-checagem.md`, `referencias/cargos-de-decisao.md`.
 
 ## 1. Buscar (em paralelo)
 
@@ -33,7 +33,7 @@ Pra cada empresa (comece pelas que têm mais sinais):
 ## 3. Checar
 
 - Aplique os 9 itens da checagem de `referencias/nota-e-checagem.md`.
-- Conta que falhar vai pra `kit/descartadas.csv` (nome, site, motivo curto).
+- Conta que falhar vai pra `dados/descartadas.csv` (nome, site, motivo curto).
 - Nada de campo inventado. O que não foi achado fica vazio. O que foi deduzido leva "inferido".
 
 ## 4. Pontuar
@@ -45,7 +45,7 @@ Pra cada empresa (comece pelas que têm mais sinais):
 
 ## 5. Gravar e filtrar
 
-- Grave `kit/contas.csv` com as colunas exatas de `COLUNAS_CONTAS` em `scripts/comum.py`, na ordem. As duas primeiras (`nome_empresa` e `site`) são obrigatórias.
+- Grave `dados/contas.csv` com as colunas exatas de `COLUNAS_CONTAS` em `scripts/comum.py`, na ordem. As duas primeiras (`nome_empresa` e `site`) são obrigatórias.
 - Datas no formato AAAA-MM-DD. "verificado_em" é a data de hoje.
 - Rode `scripts/filtrar.py checar` pra tirar quem está no CRM do usuário, no histórico ou repetido.
 

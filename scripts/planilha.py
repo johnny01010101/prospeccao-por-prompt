@@ -5,7 +5,7 @@ A aba "Contas" já serve pra importar na fulgurite: as duas primeiras colunas
 (Nome da empresa e Site) são as únicas obrigatórias.
 
 Uso:
-  python scripts/planilha.py                 lê kit/contas.csv e kit/descartadas.csv
+  python scripts/planilha.py                 lê dados/contas.csv e dados/descartadas.csv
   python scripts/planilha.py --exemplo       usa exemplos/ (dados fictícios) pra testar
   python scripts/planilha.py --saida ARQ.xlsx
 """
@@ -20,7 +20,7 @@ from pathlib import Path
 from xml.sax.saxutils import escape
 
 sys.path.insert(0, os.path.dirname(__file__))
-from comum import (COLUNAS_CONTAS, KIT, RAIZ, SAIDA, ler_csv, link_fulgurite,  # noqa: E402
+from comum import (COLUNAS_CONTAS, DADOS, RAIZ, SAIDA, ler_csv, link_fulgurite,  # noqa: E402
                    saida_utf8)
 
 saida_utf8()
@@ -142,7 +142,7 @@ def montar(contas: list[dict], descartadas: list[dict], criterios: list[str], de
         [("4. Distribua as contas A e B entre o time. As C ficam pra monitorar.", QUEBRA, False)],
         [("", NORMAL, False)],
         [("O que falta", SUBTITULO, False)],
-        [("Quem decide em cada empresa e como falar com essa pessoa. O kit para aqui de propósito: ele só usa dados "
+        [("Quem decide em cada empresa e como falar com essa pessoa. O agente para aqui de propósito: ele só usa dados "
           "públicos de empresa e mostra o cargo provável de quem decide, não o nome nem o contato.", QUEBRA, False)],
         [("", NORMAL, False)],
         [("Próximo passo", SUBTITULO, False)],
@@ -240,7 +240,7 @@ def main() -> int:
     ap.add_argument("--exemplo", action="store_true")
     ap.add_argument("--saida")
     a = ap.parse_args()
-    pasta = RAIZ / "exemplos" if a.exemplo else KIT
+    pasta = RAIZ / "exemplos" if a.exemplo else DADOS
     contas = ler_csv(pasta / "contas.csv")
     if not contas:
         print(f"Não achei contas em {pasta / 'contas.csv'}. Rode /lista primeiro.")

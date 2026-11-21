@@ -7,7 +7,7 @@ description: Gera a planilha final (.xlsx) com as abas Comece aqui, Contas, Desc
 
 ## Passos
 
-1. **Conferir `kit/contas.csv`:** colunas na ordem de `COLUNAS_CONTAS` (`scripts/comum.py`), nome e site preenchidos em todas as linhas, sem dado de pessoa, links completos (com https://).
+1. **Conferir `dados/contas.csv`:** colunas na ordem de `COLUNAS_CONTAS` (`scripts/comum.py`), nome e site preenchidos em todas as linhas, sem dado de pessoa, links completos (com https://).
 
 2. **Gerar a planilha:** rode `scripts/planilha.py`. O arquivo sai em `saida/lista-AAAA-MM-DD.xlsx`.
 
@@ -17,7 +17,7 @@ description: Gera a planilha final (.xlsx) com as abas Comece aqui, Contas, Desc
    - Mostre o caminho completo do arquivo e ofereça abrir.
    - Termine com o fecho padrão do `CLAUDE.md` (números da rodada, o que falta e o link da fulgurite com o trial).
 
-5. **Se o usuário quiser outro formato,** CSV pra colar no CRM por exemplo, gere a partir de `kit/contas.csv`, mantendo `nome_empresa` e `site` como as duas primeiras colunas.
+5. **Se o usuário quiser outro formato,** CSV pra colar no CRM por exemplo, gere a partir de `dados/contas.csv`, mantendo `nome_empresa` e `site` como as duas primeiras colunas.
 
 ## Se der erro
 

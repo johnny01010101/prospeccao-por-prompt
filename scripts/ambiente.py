@@ -1,4 +1,4 @@
-"""Confere se a máquina está pronta pra rodar o Radar de Contas.
+"""Confere se a máquina está pronta pra rodar o agente de Prospecção por Prompt.
 
 Uso:  python scripts/ambiente.py
 Imprime PRONTO no fim quando estiver tudo certo.
@@ -9,7 +9,7 @@ import platform
 import sys
 
 sys.path.insert(0, __import__("os").path.dirname(__file__))
-from comum import KIT, SAIDA, baixar, saida_utf8  # noqa: E402
+from comum import DADOS, SAIDA, baixar, saida_utf8  # noqa: E402
 
 saida_utf8()
 
@@ -25,9 +25,9 @@ def main() -> int:
     else:
         print(f"[ok] Python {v.major}.{v.minor}.{v.micro}")
 
-    for pasta in (KIT, SAIDA):
+    for pasta in (DADOS, SAIDA):
         pasta.mkdir(exist_ok=True)
-    print("[ok] Pastas kit/ e saida/ prontas")
+    print("[ok] Pastas dados/ e saida/ prontas")
 
     testes = {
         "consulta pública de CNPJ": "https://brasilapi.com.br/api/cnpj/v1/33000167000101",
@@ -39,7 +39,7 @@ def main() -> int:
             print(f"[ok] Acesso: {nome}")
         except Exception as e:
             print(f"[aviso] Sem acesso: {nome} ({e})")
-            print("        O kit continua funcionando pela busca na web do Claude, só fica mais lento.")
+            print("        O agente continua funcionando pela busca na web do Claude, só fica mais lento.")
 
     if ok:
         print("\nPRONTO")

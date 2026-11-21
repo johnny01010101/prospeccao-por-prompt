@@ -12,7 +12,7 @@
 8. **Anti-sinais:** um, penalidade e alerta; dois ou mais, descarte.
 9. **Nada inventado:** se um campo não foi achado, fica vazio. Nunca preencher com palpite sem marcar "inferido".
 
-Toda conta que sai vai pra `kit/descartadas.csv` com o motivo em poucas palavras.
+Toda conta que sai vai pra `dados/descartadas.csv` com o motivo em poucas palavras.
 
 ## Nota (0 a 100)
 

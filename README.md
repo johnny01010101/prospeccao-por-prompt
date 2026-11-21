@@ -1,8 +1,8 @@
-# Radar de Contas
+# Prospecção por Prompt
 
-**As empresas brasileiras que estão prontas pra comprar de você esta semana, e por quê.**
+**O agente que acha as empresas brasileiras com sinais de compra pro seu produto, e diz por que cada uma está pronta pra comprar esta semana.**
 
-Um kit grátis pro Claude Code. Você cola um bloco de instalação e o Claude:
+Grátis, roda no seu Claude Code. Você cola um bloco de instalação e o Claude:
 
 1. lê o site da sua empresa e propõe o seu ICP (você só confirma);
 2. escolhe os sinais de compra do seu mercado: vagas abertas, nova liderança, expansão;
@@ -20,7 +20,7 @@ Só fontes públicas e só dados de empresa. Nada pra assinar, nenhuma chave de 
   - o seu time perde horas pesquisando pra quem ligar.
 - **Não use se:**
   - você vende pra pessoa física;
-  - quer telefone e e-mail prontos (isso é a [fulgurite](https://app.fulgurite.io/signup?utm_source=radar-de-contas&utm_medium=github&utm_campaign=radar-de-contas), não o kit);
+  - quer telefone e e-mail prontos (isso é a [fulgurite](https://app.fulgurite.io/signup?utm_source=prospeccao-por-prompt&utm_medium=github&utm_campaign=prospeccao-por-prompt), não o agente);
   - não tem plano pago do Claude.
 
 ## Instalação
@@ -60,15 +60,15 @@ Você não precisa decorar nada: o Claude conduz. Se quiser, os comandos são:
 ## Fontes e privacidade
 
 - **Fontes:** vagas no portal público da Gupy e em páginas de carreira; notícias e sites das empresas pela busca na web do Claude; consulta pública de CNPJ (BrasilAPI e Minha Receita).
-- **O que o kit nunca guarda nem mostra:** nome, e-mail, telefone ou perfil de pessoas, nem os sócios do CNPJ.
-- **O que o kit nunca faz:** acessar páginas com login, paywall ou bloqueio, nem abrir páginas do LinkedIn.
-- **Onde ficam os seus dados:** na pasta `kit/`, no seu computador. Nada é enviado pra fulgurite.
+- **O que o agente nunca guarda nem mostra:** nome, e-mail, telefone ou perfil de pessoas, nem os sócios do CNPJ.
+- **O que o agente nunca faz:** acessar páginas com login, paywall ou bloqueio, nem abrir páginas do LinkedIn.
+- **Onde ficam os seus dados:** na pasta `dados/`, no seu computador. Nada é enviado pra fulgurite.
 
 As contas são potenciais clientes com base em sinais públicos. Nenhuma delas demonstrou interesse no seu produto. Confira antes de abordar.
 
 ## E depois da lista?
 
-O kit para no cargo provável de quem decide, de propósito. Pra achar a pessoa e o contato de cada conta, suba a aba Contas na **fulgurite** (só precisa de nome e site): [50 créditos grátis por 7 dias, sem cartão](https://app.fulgurite.io/signup?utm_source=radar-de-contas&utm_medium=github&utm_campaign=radar-de-contas).
+O agente para no cargo provável de quem decide, de propósito. Pra achar a pessoa e o contato de cada conta, suba a aba Contas na **fulgurite** (só precisa de nome e site): [50 créditos grátis por 7 dias, sem cartão](https://app.fulgurite.io/signup?utm_source=prospeccao-por-prompt&utm_medium=github&utm_campaign=prospeccao-por-prompt).
 
 ## Estrutura
 
@@ -79,7 +79,7 @@ INSTALAR.md               o bloco pra colar no Claude Code
 referencias/              sinais, fontes, cargos de quem decide, nota e checagem
 scripts/                  Python, sem dependências (vagas, CNPJ, filtro, planilha, ambiente)
 exemplos/                 dados fictícios pra testar a planilha
-kit/                      os seus dados (criado na primeira rodada; não vai pro git)
+dados/                      os seus dados (criado na primeira rodada; não vai pro git)
 saida/                    as planilhas geradas (não vai pro git)
 ```
 

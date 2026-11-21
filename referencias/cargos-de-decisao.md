@@ -1,6 +1,6 @@
 # Quem decide: área e cargo provável
 
-O kit indica a ÁREA que decide e o CARGO provável. Nunca o nome da pessoa nem o contato.
+O agente indica a ÁREA que decide e o CARGO provável. Nunca o nome da pessoa nem o contato.
 
 ## Por porte da empresa
 

@@ -11,7 +11,7 @@ Opções:
   --dias N      só vagas publicadas nos últimos N dias (padrão 45)
   --uf NOME     filtra pelo estado escrito por extenso, ex.: "Minas Gerais"
   --descricao   inclui os primeiros 1.200 caracteres da descrição (pra achar ferramentas citadas)
-  --saida ARQ   grava também um CSV com uma linha por empresa (ex.: kit/vagas.csv)
+  --saida ARQ   grava também um CSV com uma linha por empresa (ex.: dados/vagas.csv)
 
 Saída: JSON com uma entrada por empresa (nome, página de carreira, vagas, datas, cidades).
 """

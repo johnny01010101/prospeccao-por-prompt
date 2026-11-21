@@ -1,15 +1,15 @@
 ---
 name: sinais
-description: Escolhe os sinais de compra que importam pro mercado do usuário (vagas, nova liderança, expansão etc.), os anti-sinais e os termos de busca em português, e grava em kit/sinais.md. Use depois do /comecar, ou quando o usuário quiser mudar o que conta como sinal.
+description: Escolhe os sinais de compra que importam pro mercado do usuário (vagas, nova liderança, expansão etc.), os anti-sinais e os termos de busca em português, e grava em dados/sinais.md. Use depois do /comecar, ou quando o usuário quiser mudar o que conta como sinal.
 ---
 
 # /sinais: o que mostra que uma empresa vai comprar agora
 
-Objetivo: gravar `kit/sinais.md` com de 4 a 6 sinais, os anti-sinais e os termos de busca, com uma confirmação do usuário.
+Objetivo: gravar `dados/sinais.md` com de 4 a 6 sinais, os anti-sinais e os termos de busca, com uma confirmação do usuário.
 
 ## Passos
 
-1. Leia `kit/empresa.md`, `kit/icp.md` e `referencias/sinais.md`.
+1. Leia `dados/empresa.md`, `dados/icp.md` e `referencias/sinais.md`.
 
 2. **Escolher os sinais.**
    - Encontre na tabela "Sinais por tipo de produto vendido" a linha (ou linhas) que combinam com o que o usuário vende. Se nenhuma servir, monte uma com a pergunta: "qual cargo a empresa contrata quando passa a ter o problema que ele resolve? Que evento cria esse problema?".
@@ -24,7 +24,7 @@ Objetivo: gravar `kit/sinais.md` com de 4 a 6 sinais, os anti-sinais e os termos
 
 5. **Confirmação.** Mostre em no máximo 12 linhas: os sinais em ordem, um exemplo de "por que agora" pra cada, e os anti-sinais. Pergunte: "Faz sentido? Quer tirar ou incluir algum?"
 
-6. **Gravar `kit/sinais.md`,** com as seções:
+6. **Gravar `dados/sinais.md`,** com as seções:
    - Sinais (em ordem, cada um com: o que é, por que indica compra, validade em dias, peso alto, médio ou baixo);
    - Termos pra vagas;
    - Termos pra busca na web;

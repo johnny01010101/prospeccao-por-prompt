@@ -1,4 +1,4 @@
-"""Funções comuns do Radar de Contas. Só biblioteca padrão do Python (3.9+).
+"""Funções comuns do agente de Prospecção por Prompt. Só biblioteca padrão do Python (3.9+).
 
 Funciona igual no Windows e no Mac.
 """
@@ -16,14 +16,14 @@ import urllib.request
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
-KIT = RAIZ / "kit"
+DADOS = RAIZ / "dados"
 SAIDA = RAIZ / "saida"
 
 # Link do próximo passo: cadastro do trial (50 créditos, 7 dias, sem cartão).
 FULGURITE_URL = "https://app.fulgurite.io/signup"
-UTM = "utm_source=radar-de-contas&utm_medium=kit&utm_campaign=radar-de-contas"
+UTM = "utm_source=prospeccao-por-prompt&utm_medium=agente&utm_campaign=prospeccao-por-prompt"
 
-AGENTE = "Mozilla/5.0 (compatible; radar-de-contas/1.0)"
+AGENTE = "Mozilla/5.0 (compatible; prospeccao-por-prompt/1.0)"
 NAVEGADOR = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/130 Safari/537.36"

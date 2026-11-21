@@ -3,16 +3,16 @@
 Comandos:
   python scripts/filtrar.py importar ARQUIVO.csv
       Lê a lista atual ou a exportação do CRM (qualquer CSV com uma coluna de site,
-      domínio, e-mail corporativo ou nome de empresa) e grava kit/nao-abordar.csv.
+      domínio, e-mail corporativo ou nome de empresa) e grava dados/nao-abordar.csv.
       Só guarda nome da empresa e domínio. Nunca guarda dados de pessoa.
 
   python scripts/filtrar.py checar
-      Lê kit/contas.csv e tira as contas que já estão em kit/nao-abordar.csv,
-      em kit/historico.csv (rodadas anteriores) ou repetidas no próprio arquivo.
-      As retiradas vão pra kit/descartadas.csv com o motivo.
+      Lê dados/contas.csv e tira as contas que já estão em dados/nao-abordar.csv,
+      em dados/historico.csv (rodadas anteriores) ou repetidas no próprio arquivo.
+      As retiradas vão pra dados/descartadas.csv com o motivo.
 
   python scripts/filtrar.py arquivar
-      Depois de gerar a planilha: copia as contas da rodada pra kit/historico.csv,
+      Depois de gerar a planilha: copia as contas da rodada pra dados/historico.csv,
       pra que o /atualizar mostre só o que é novo.
 """
 from __future__ import annotations
@@ -23,15 +23,15 @@ import sys
 from datetime import date
 
 sys.path.insert(0, os.path.dirname(__file__))
-from comum import (COLUNAS_DESCARTADAS, IDS_CONTAS, KIT, dominio, gravar_csv,  # noqa: E402
+from comum import (COLUNAS_DESCARTADAS, IDS_CONTAS, DADOS, dominio, gravar_csv,  # noqa: E402
                    ler_csv, saida_utf8)
 
 saida_utf8()
 
-NAO_ABORDAR = KIT / "nao-abordar.csv"
-HISTORICO = KIT / "historico.csv"
-CONTAS = KIT / "contas.csv"
-DESCARTADAS = KIT / "descartadas.csv"
+NAO_ABORDAR = DADOS / "nao-abordar.csv"
+HISTORICO = DADOS / "historico.csv"
+CONTAS = DADOS / "contas.csv"
+DESCARTADAS = DADOS / "descartadas.csv"
 
 PISTAS_SITE = ("site", "website", "domain", "dominio", "domínio", "url", "web")
 PISTAS_EMAIL = ("email", "e-mail", "mail")

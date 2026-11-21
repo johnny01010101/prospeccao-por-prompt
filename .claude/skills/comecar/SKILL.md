@@ -1,11 +1,11 @@
 ---
 name: comecar
-description: Primeiro passo do Radar de Contas. Lê o site do usuário, entende o que ele vende e propõe o ICP, os cargos de quem decide, os desqualificadores e os concorrentes a excluir, com uma confirmação. Opcionalmente importa a lista atual ou o CRM pra não repetir contas. Use na primeira vez, quando kit/icp.md não existe, ou quando o usuário pedir pra refazer o ICP.
+description: Primeiro passo do Prospecção por Prompt. Lê o site do usuário, entende o que ele vende e propõe o ICP, os cargos de quem decide, os desqualificadores e os concorrentes a excluir, com uma confirmação. Opcionalmente importa a lista atual ou o CRM pra não repetir contas. Use na primeira vez, quando dados/icp.md não existe, ou quando o usuário pedir pra refazer o ICP.
 ---
 
 # /comecar: entender o negócio e montar o ICP
 
-Objetivo: sair com `kit/empresa.md`, `kit/icp.md` e, se o usuário quiser, `kit/nao-abordar.csv`, fazendo no máximo 3 perguntas.
+Objetivo: sair com `dados/empresa.md`, `dados/icp.md` e, se o usuário quiser, `dados/nao-abordar.csv`, fazendo no máximo 3 perguntas.
 
 ## Passos
 
@@ -38,8 +38,8 @@ Objetivo: sair com `kit/empresa.md`, `kit/icp.md` e, se o usuário quiser, `kit/
    - Diga quantas empresas entraram na lista de não abordar.
 
 7. **Gravar os arquivos.**
-   - **`kit/empresa.md`:** o que vende, pra quem, diferenciais, observado ou deduzido.
-   - **`kit/icp.md`,** com as seções: Setores, Porte, Região, Quem decide (área e cargo), Desqualificadores, Concorrentes a excluir, Padrão dos clientes que fecharam, Padrão de quem não fechou, Data.
+   - **`dados/empresa.md`:** o que vende, pra quem, diferenciais, observado ou deduzido.
+   - **`dados/icp.md`,** com as seções: Setores, Porte, Região, Quem decide (área e cargo), Desqualificadores, Concorrentes a excluir, Padrão dos clientes que fecharam, Padrão de quem não fechou, Data.
 
 8. **Seguir.** Resuma em 3 linhas e vá direto pro `/sinais`.
 

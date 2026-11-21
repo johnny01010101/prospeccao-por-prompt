@@ -9,7 +9,7 @@ Objetivo: em uma rodada de "sim ou não", corrigir o ICP e os sinais antes de ga
 
 ## Passos
 
-1. Leia `kit/icp.md` e `kit/sinais.md`.
+1. Leia `dados/icp.md` e `dados/sinais.md`.
 
 2. **Buscar rápido 10 candidatas variadas.**
    - Rode `scripts/vagas.py` com os 2 ou 3 termos de vaga mais fortes (`--paginas 1 --dias 45`).
@@ -26,8 +26,8 @@ Objetivo: em uma rodada de "sim ou não", corrigir o ICP e os sinais antes de ga
    - Se o usuário recusou quase todas, volte ao ICP com uma proposta nova e repita uma vez.
 
 5. **Gravar.**
-   - **`kit/calibracao.md`:** as 10, a resposta do usuário e o que mudou.
-   - **`kit/icp.md` e `kit/sinais.md`:** atualizados, com uma linha "Ajustado na calibração em DATA: …".
+   - **`dados/calibracao.md`:** as 10, a resposta do usuário e o que mudou.
+   - **`dados/icp.md` e `dados/sinais.md`:** atualizados, com uma linha "Ajustado na calibração em DATA: …".
    - Guarde as empresas aceitas: elas entram na lista do `/lista` se passarem na checagem.
 
 6. **Seguir.** Diga em 2 linhas o que mudou e vá pro `/lista`.

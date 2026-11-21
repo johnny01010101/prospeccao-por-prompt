@@ -7,7 +7,7 @@ description: Lista viva. Roda uma nova busca com o ICP e os sinais salvos, mostr
 
 ## Passos
 
-1. **Ler** `kit/icp.md`, `kit/sinais.md` e `kit/historico.csv`. Diga em uma linha a data da última rodada e quantas contas já foram entregues.
+1. **Ler** `dados/icp.md`, `dados/sinais.md` e `dados/historico.csv`. Diga em uma linha a data da última rodada e quantas contas já foram entregues.
 
 2. **Perguntar só uma coisa:** "Mudou algo no seu foco desde a última vez (setor, região, produto)?"
    - Se mudou, ajuste `icp.md` e `sinais.md` antes. Se mudou muito, sugira refazer o `/calibrar`.
