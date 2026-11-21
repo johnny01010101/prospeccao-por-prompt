@@ -28,6 +28,7 @@ Pra cada empresa (comece pelas que têm mais sinais):
 - **Vagas comerciais abertas:** a quantidade e os cargos.
 - **Ferramentas ou concorrentes citados:** procure nas descrições das vagas e no site (ex.: "experiência com X").
 - **Quem decide:** área e cargo provável, por `referencias/cargos-de-decisao.md`, ajustado pelos sinais (nova liderança ou vaga de liderança aberta).
+- **Setor com pouca cobertura de contatos:** se a conta for de comércio local, restaurantes, transporte, ou não tiver presença profissional pública (site fraco, poucas vagas, sem página de carreira), escreva na coluna "alertas": "setor com pouca cobertura de contatos: faça a busca grátis na fulgurite antes de gastar créditos". A conta continua na lista; o aviso é só pra pessoa não se frustrar no próximo passo.
 
 ## 3. Checar
 
