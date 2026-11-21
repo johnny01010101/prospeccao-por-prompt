@@ -1,37 +1,26 @@
 ---
 name: sinais
-description: Escolhe os sinais de compra que importam pro mercado do usuário (vagas, nova liderança, expansão etc.), os anti-sinais e os termos de busca em português, e grava em dados/sinais.md. Use depois do /comecar, ou quando o usuário quiser mudar o que conta como sinal.
+description: Troca, inclui ou tira sinais de compra (vagas, estruturar do zero, contratos públicos, ferramentas no site, nova liderança, expansão, investimento) e os termos de busca em dados/sinais.md. Use quando o usuário quiser mudar o que conta como sinal, ou quando a lista vier fraca. Na primeira vez, o /comecar já escolhe os sinais sozinho.
 ---
 
-# /sinais: o que mostra que uma empresa vai comprar agora
+# /sinais: mudar o que mostra que uma empresa vai comprar agora
 
-Objetivo: gravar `dados/sinais.md` com de 4 a 6 sinais, os anti-sinais e os termos de busca, com uma confirmação do usuário.
+Objetivo: atualizar `dados/sinais.md` com uma confirmação só.
 
 ## Passos
 
-1. Leia `dados/empresa.md`, `dados/icp.md` e `referencias/sinais.md`.
+1. Leia `dados/empresa.md`, `dados/icp.md`, `dados/sinais.md` (se existir) e `referencias/sinais.md`.
 
-2. **Escolher os sinais.**
-   - Encontre na tabela "Sinais por tipo de produto vendido" a linha (ou linhas) que combinam com o que o usuário vende. Se nenhuma servir, monte uma com a pergunta: "qual cargo a empresa contrata quando passa a ter o problema que ele resolve? Que evento cria esse problema?".
-   - Se houver padrão dos clientes que fecharam em `icp.md`, transforme esse padrão no sinal número 1.
-   - Ordene pela confiabilidade de `referencias/sinais.md`. Vaga aberta ligada ao problema costuma ser o sinal principal no Brasil.
+2. **Propor a mudança.**
+   - Se o usuário disse o que quer, aplique.
+   - Se a lista veio fraca, proponha trocar o sinal mais fraco por outro do "Menu de sinais", e explique em uma linha por quê.
+   - Se houver padrão dos clientes que fecharam em `icp.md`, ele vira o sinal número 1.
 
-3. **Termos de busca.** Pra cada sinal, escreva de 3 a 6 termos em português, do jeito que aparecem em vagas e notícias brasileiras (ex.: "executivo de vendas", "pré-vendas", "estruturar área comercial"). Separe:
-   - termos pro `scripts/vagas.py`: cargos;
-   - termos pra busca na web: notícias, expansão, liderança.
+3. **Termos de busca.** De 3 a 6 por sinal, em português, do jeito que aparecem em vagas, contratos e notícias brasileiras. Separe termos pro `scripts/vagas.py`, termos pro `scripts/licitacoes.py descobrir` (objeto do contrato) e termos pra busca na web.
 
-4. **Anti-sinais.** Liste os de `referencias/sinais.md` que valem pro caso, mais o padrão de quem não fechou (se houver) e os concorrentes do `icp.md`.
+4. **Confirmação.** Mostre em no máximo 8 linhas os sinais em ordem, um exemplo de "por que agora" pra cada e os anti-sinais. Pergunte: "Fica assim?"
 
-5. **Confirmação.** Mostre em no máximo 12 linhas: os sinais em ordem, um exemplo de "por que agora" pra cada, e os anti-sinais. Pergunte: "Faz sentido? Quer tirar ou incluir algum?"
-
-6. **Gravar `dados/sinais.md`,** com as seções:
-   - Sinais (em ordem, cada um com: o que é, por que indica compra, validade em dias, peso alto, médio ou baixo);
-   - Termos pra vagas;
-   - Termos pra busca na web;
-   - Anti-sinais;
-   - Data.
-
-7. **Seguir.** Resuma em 2 linhas e vá pro `/calibrar`.
+5. **Gravar `dados/sinais.md`** (mesmas seções do `/comecar`) com a linha "Ajustado em DATA: …".
 
 ## Não faça
 

@@ -28,7 +28,7 @@ Cada componente vai de 0 a 100.
 | **Momento** | sinal de até 15 dias | 16 a 45 dias | vencido |
 | **Evidência** | 2 fontes independentes, tudo observado | 1 fonte confiável | inferido, sem fonte direta |
 
-- **Bônus:** mais 5 por tipo de sinal diferente além do primeiro (máximo de mais 10). Mais 10 se repete o gatilho dos clientes que fecharam.
+- **Bônus:** mais 5 por tipo de sinal diferente além do primeiro (máximo de mais 10). Mais 10 se repete o gatilho dos clientes que fecharam. Mais 5 se a vaga fala em estruturar a área do zero e o produto ajuda nisso. Mais 5 se as vagas cresceram 2 ou mais desde a última rodada.
 - **Penalidade:** menos 15 por anti-sinal (dois anti-sinais: descarte).
 
 ## Faixas

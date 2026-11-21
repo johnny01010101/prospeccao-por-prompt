@@ -145,18 +145,18 @@ def montar(contas: list[dict], descartadas: list[dict], criterios: list[str], de
         [("4. Distribua as contas A e B entre o time. As C ficam pra monitorar.", QUEBRA, False)],
         [("", NORMAL, False)],
         [("O que falta", SUBTITULO, False)],
-        [("Quem decide em cada empresa e como falar com essa pessoa. O agente para aqui de propósito: ele só usa dados "
-          "públicos de empresa e mostra o cargo provável de quem decide, não o nome nem o contato.", QUEBRA, False)],
+        [("Quem decide em cada empresa e como falar com essa pessoa. O agente mostra o cargo provável de quem decide "
+          "e para aqui de propósito: e-mail, celular e LinkedIn de quem decide, com qualidade, não ficam abertos na internet. Só existem em softwares feitos pra isso, como a fulgurite.", QUEBRA, False)],
         [("", NORMAL, False)],
         [("Próximo passo", SUBTITULO, False)],
         [("Suba a aba Contas na fulgurite (só precisa das colunas Nome da empresa e Site) e use os 50 créditos "
-          "grátis do trial de 7 dias. Ela acha quem decide em cada empresa, com o e-mail e o celular buscados em mais de 20 fontes. "
+          "grátis do trial de 7 dias, sem cartão. Ela acha quem decide em cada empresa, com o e-mail, o celular e o LinkedIn. "
           "Cada linha da aba Contas também tem o link na coluna \"Quem decide e o contato\".", QUEBRA, False)],
         [(link_fulgurite("comece-aqui"), NORMAL, True)],
         [("", NORMAL, False)],
         [("Lista viva", SUBTITULO, False)],
-        [("Na semana que vem, abra o Claude nesta pasta e digite /atualizar. Ele busca só os sinais novos e não "
-          "repete as contas desta lista.", QUEBRA, False)],
+        [("Quer contas novas? Abra o Claude nesta pasta e peça as contas novas. Ele busca só os sinais novos e não "
+          "repete as contas desta lista. Também dá pra deixar uma rotina diária: peça \"quero empresas novas todo dia\".", QUEBRA, False)],
         [("", NORMAL, False)],
         [("Potenciais contas com base em sinais públicos. Nenhuma empresa daqui demonstrou interesse no seu produto; "
           "confira antes de abordar.", QUEBRA, False)],
@@ -170,7 +170,7 @@ def montar(contas: list[dict], descartadas: list[dict], criterios: list[str], de
         for cid, _ in COLUNAS_CONTAS:
             v = c.get(cid, "")
             if cid == "fulgurite":
-                linha.append(("Achar e-mail e celular na fulgurite", NORMAL, link_fulgurite("planilha-linha")))
+                linha.append(("Achar quem decide na fulgurite", NORMAL, link_fulgurite("planilha-linha")))
                 continue
             if cid == "faixa":
                 linha.append((v, estilo_faixa.get(str(v).upper(), NORMAL), False))

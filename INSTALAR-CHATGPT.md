@@ -30,7 +30,7 @@ Você vai instalar o agente "Prospecção por Prompt" pra mim neste computador. 
    Leia o AGENTS.md e comece pela etapa "comecar": me pergunte só o site da minha empresa.
 
 4) PRIMEIRA LISTA
-   Siga as etapas sinais, calibrar, lista e planilha até a planilha ficar pronta.
+   Siga as etapas lista e planilha sem me fazer outras perguntas e me entregue a planilha o mais rápido possível.
    Me mostre onde ela foi salva.
 
 Tenha paciência comigo, suponha que eu nunca usei um terminal e use só este agente.
@@ -41,3 +41,5 @@ Se ele pedir permissão pra instalar algo, acessar a internet ou abrir um site, 
 ## 3. Da próxima vez
 
 Abra o app na pasta `prospeccao-por-prompt` (em Documentos) e escreva: **"quero as contas novas da semana"**.
+
+Quer empresas novas todo dia, sem abrir nada? Peça **"quero empresas novas todo dia"**. Ele deixa uma rotina agendada no seu computador: no horário que você escolher, as empresas com os sinais mais frescos numa planilha nova.

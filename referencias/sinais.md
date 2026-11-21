@@ -2,6 +2,24 @@
 
 Um sinal é um fato público e datado que mostra que a empresa está mudando agora e que essa mudança cria necessidade do que o usuário vende. Sinal sem data, ou que não se liga ao produto do usuário, não conta.
 
+## Menu de sinais que o agente sabe buscar
+
+Na primeira rodada, escolha sozinho de 2 a 4 sinais deste menu: os mais ligados ao produto do usuário e os mais rápidos. Sempre pelo menos um sinal "rápido" (com script).
+
+| Sinal | Como busca | Velocidade | Use quando |
+|---|---|---|---|
+| **Vagas ligadas ao problema** | `scripts/vagas.py` (Gupy e Vagas.com) | rápido | quase sempre: é o sinal principal no Brasil |
+| **Estruturar do zero** (primeiro vendedor, montar a área) | sai pronto do `scripts/vagas.py` (`estruturar_do_zero`) | rápido | o produto ajuda quem está montando ou organizando uma área |
+| **Crescimento de vagas** entre rodadas | sai pronto do `scripts/vagas.py` (`crescimento_vagas`), a partir da 2ª rodada | rápido | sempre que existir histórico: soma como sinal extra |
+| **Contratos públicos ganhos** | `scripts/licitacoes.py` (PNCP) | rápido | o ICP vende pra governo, ou o produto ajuda quem ganhou contrato e precisa entregar (gente, operação, logística, tecnologia) |
+| **Ferramentas e maturidade no site** | `scripts/sites.py` | rápido | o produto substitui, integra ou complementa uma ferramenta, ou o usuário só vende pra quem já tem time comercial estruturado |
+| **Nova liderança** na área que compra | busca na web | médio | o produto é escolhido por diretor ou head |
+| **Expansão** (filial, unidade, estado novo) | busca na web | médio | o problema cresce com o tamanho da operação |
+| **Investimento** (rodada, aporte, aquisição) | busca na web | médio | o produto é comprado com dinheiro novo (startups, scale-ups) |
+| **Dor declarada** | busca na web | lento | só como sinal extra, nunca na primeira rodada |
+
+Regra da pressa: na primeira rodada, no máximo um sinal "médio" e nenhum "lento". Os outros entram nas rodadas seguintes.
+
 ## Ordem de confiabilidade (use pra pesar)
 
 1. **Padrão dos clientes que fecharam:** o mesmo gatilho que os clientes do usuário tinham quando compraram. É o mais forte quando existe.
@@ -56,6 +74,9 @@ Se o produto do usuário não couber em nenhuma linha, monte a linha dele com a 
 | Sinal | Bom até | Depois disso |
 |---|---|---|
 | Vaga aberta | 45 dias da publicação | cai a nota de momento |
+| Crescimento de vagas | até a próxima rodada | recalcule na rodada seguinte |
+| Contrato público ganho | 120 dias da assinatura | cai a nota de momento |
+| Ferramentas no site | sem data | nunca é sinal principal, só apoio |
 | Nova liderança | 90 dias da posse | cai a nota de momento |
 | Expansão ou investimento | 120 dias do anúncio | cai a nota de momento |
 | Conteúdo do site | sem data | nunca é sinal principal |

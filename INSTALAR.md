@@ -13,7 +13,7 @@ Copie o bloco inteiro e cole. O Claude baixa o agente, prepara o seu computador 
 ```text
 Você vai instalar o agente "Prospecção por Prompt" pra mim neste computador. Eu NÃO sou técnico: faça tudo sozinho, nunca me peça pra rodar comando nem editar arquivo, e explique cada passo em português simples. Mantenha uma lista de tarefas visível e vá marcando o que já fez.
 
-1) BAIXAR O DADOS
+1) BAIXAR O AGENTE
    git clone https://github.com/johnny01010101/prospeccao-por-prompt.git   (na minha pasta Documentos)
    Sem git? Baixe o ZIP do mesmo endereço (/archive/refs/heads/main.zip) e descompacte.
    Depois, trabalhe sempre de dentro da pasta "prospeccao-por-prompt".
@@ -27,7 +27,7 @@ Você vai instalar o agente "Prospecção por Prompt" pra mim neste computador. 
    Leia o CLAUDE.md e comece pelo /comecar: me pergunte só o site da minha empresa.
 
 4) PRIMEIRA LISTA
-   Siga /sinais, /calibrar, /lista e /planilha até a planilha ficar pronta.
+   Siga /lista e /planilha sem me fazer outras perguntas e me entregue a planilha o mais rápido possível.
    Me mostre onde ela foi salva.
 
 Tenha paciência comigo, suponha que eu nunca usei um terminal e use só este agente.
@@ -39,8 +39,10 @@ Se ele pedir permissão pra instalar algo ou acessar um site, clique em **Permit
 
 Abra o Claude Code na pasta `prospeccao-por-prompt` (em Documentos) e escreva: **"quero as contas novas da semana"**. Ele roda o `/atualizar` e não repete as contas que você já recebeu.
 
+Quer empresas novas todo dia, sem abrir nada? Peça **"quero empresas novas todo dia"**. Ele deixa uma rotina agendada no seu computador: no horário que você escolher, as empresas com os sinais mais frescos numa planilha nova.
+
 ## Deu problema?
 
 - **"Python não encontrado" no Windows:** feche e abra o Claude Code depois da instalação do Python, pra ele enxergar o comando novo.
 - **Algum site não abriu:** o agente segue pela busca na web do Claude. Só fica um pouco mais lento.
-- **A lista veio fora do alvo:** peça "vamos refazer a calibração".
+- **A lista veio fora do alvo:** peça "vamos afinar a lista" e diga quais contas não serviriam.
