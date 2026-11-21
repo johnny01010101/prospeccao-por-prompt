@@ -19,9 +19,10 @@ RAIZ = Path(__file__).resolve().parent.parent
 DADOS = RAIZ / "dados"
 SAIDA = RAIZ / "saida"
 
-# Link do próximo passo: site da fulgurite (trial de 50 créditos, 7 dias, sem cartão).
-# Todo link pra fulgurite usa este endereço, com as UTMs.
-FULGURITE_URL = "https://fulgurite.io/"
+# Link do próximo passo dentro do agente e da planilha: cadastro direto do trial
+# (50 créditos, 7 dias, sem cartão). Quem chega aqui já usou o agente.
+# Fora do agente (PDF, e-mail, README, LP) o link é https://fulgurite.io.
+FULGURITE_URL = "https://app.fulgurite.io/signup"
 UTM = "utm_source=prospeccao-por-prompt&utm_medium=agente&utm_campaign=prospeccao-por-prompt"
 
 AGENTE = "Mozilla/5.0 (compatible; prospeccao-por-prompt/1.0)"
