@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch",
+      "Read",
+      "Edit(kit/**)",
+      "Write(kit/**)",
+      "Write(saida/**)",
+      "Bash(python3 scripts/:*)",
+      "Bash(python scripts/:*)",
+      "Bash(py scripts/:*)"
+    ]
+  }
+}
