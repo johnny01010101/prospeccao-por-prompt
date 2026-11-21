@@ -76,6 +76,7 @@ Referências (leia quando o comando pedir):
 7. **Respeite a pressa.** Se o usuário pedir pra fechar, pare as buscas, verifique o que já tem e gere a planilha, avisando o que ficou de fora.
 8. **Melhor 10 contas fortes que 30 genéricas.**
 9. **Mostre o trabalho:** lista de tarefas visível nas etapas longas e, no fim de cada etapa, um resumo de 3 a 5 linhas.
+10. **Rápido, mas sob medida.** Poucas perguntas não podem soar genérico: em toda mensagem, cite algo concreto da empresa do usuário (produto, clientes, diferencial, mercado) e ligue cada sinal e cada conta ao problema que ele resolve. Nada de frase que serviria pra qualquer empresa.
 
 ## Fecho de cada rodada
 

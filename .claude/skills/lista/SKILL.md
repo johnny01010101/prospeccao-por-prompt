@@ -19,7 +19,7 @@ Leia antes: `dados/icp.md`, `dados/sinais.md`, `referencias/nota-e-checagem.md`,
 
 ## 1. Buscar (em paralelo)
 
-- Abra uma lista de tarefas visível, com uma linha por sinal.
+- Abra uma lista de tarefas visível, com uma linha por sinal, escrita com o negócio do usuário (ex.: "vagas de SDR em empresas de software de SP", não "buscar vagas").
 - Rode os scripts dos sinais escolhidos ao mesmo tempo (em paralelo, quando puder):
   - **Vagas:** `scripts/vagas.py "<termo1>" "<termo2>" … --paginas 2 --dias 45` (primeira lista: `--paginas 1`). Já traz `estruturar_do_zero` e, a partir da 2ª rodada, `crescimento_vagas`.
   - **Contratos públicos:** `scripts/licitacoes.py descobrir "<termo>" --dias 45 --valor-minimo <de acordo com o porte do ICP>`.
@@ -48,7 +48,7 @@ Ordene as candidatas pelo número de sinais e complete de cima pra baixo até ba
 
 - Calcule a nota de 0 a 100 e a faixa (A, B, C) pela fórmula de `referencias/nota-e-checagem.md`.
 - Abaixo de 50, a conta vai pras descartadas com "nota baixa".
-- "Por que agora" em uma linha: o fato, a data e por que importa pro produto do usuário.
+- "Por que agora" em uma linha: o fato, a data e por que importa pro produto do usuário, citando o produto ou o problema que ele resolve. Nunca a mesma frase em duas contas.
 - "Próximo passo sugerido": "abordar esta semana" (A e B) ou "monitorar" (C).
 
 ## 5. Gravar e filtrar

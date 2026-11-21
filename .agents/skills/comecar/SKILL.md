@@ -7,6 +7,8 @@ description: Primeiro passo do Prospecção por Prompt. Pede só o site, lê o n
 
 Objetivo: em poucos minutos, sair com `dados/empresa.md`, `dados/icp.md` e `dados/sinais.md` e começar a buscar. Valor rápido vem antes de perfeição: o ajuste fino fica pra depois da primeira planilha.
 
+**Rápido não pode parecer genérico.** A pessoa precisa sentir que você estudou a empresa dela. Por isso, poucas perguntas, mas cada frase sua cita algo concreto do site dela: o produto pelo nome, um cliente ou case que aparece lá, o diferencial, o tipo de cliente que ela atende. Nunca use frases que serviriam pra qualquer empresa.
+
 ## Passos
 
 1. **Ambiente.** Se ainda não rodou nesta máquina, rode `scripts/ambiente.py` e resolva o que faltar sem pedir comandos ao usuário.
@@ -23,13 +25,17 @@ Objetivo: em poucos minutos, sair com `dados/empresa.md`, `dados/icp.md` e `dado
 
 5. **Uma confirmação só.** Mostre em no máximo 10 linhas:
    ```
-   Entendi que vocês vendem <uma linha> pra <quem>.
+   Li o site de vocês. Entendi que a <empresa> vende <produto, pelo nome> pra <quem>,
+   e que o diferencial é <o que o site destaca>. Vi <um cliente, case ou número do site>.
    Vou buscar empresas de <setores>, <porte>, em <região>.
-   Sinais que vou usar: 1) <sinal> 2) <sinal> 3) <sinal>
-   Vou tirar: <concorrentes e desqualificadores, curto>
+   Sinais que vou usar, e por quê pra vocês:
+   1) <sinal>: <por que, ligado ao produto deles, em poucas palavras>
+   2) <sinal>: <por quê>
+   Vou tirar: <concorrentes pelo nome e desqualificadores, curto>
    Posso começar? Se algo estiver errado, é só corrigir.
    ```
-   - Se a pessoa corrigir, ajuste e comece, sem nova rodada de perguntas.
+   - Exemplo de "por quê" bom: "vaga de SDR: quem contrata SDR vai precisar de lista, e é isso que o <produto> resolve". Ruim: "vagas abertas indicam crescimento".
+   - Se a pessoa corrigir, ajuste e comece, sem nova rodada de perguntas. Agradeça citando o que mudou ("boa, tirei o varejo e foquei em indústria").
    - Não peça clientes que fecharam nem o CRM agora. Isso entra depois da primeira planilha.
 
 6. **Gravar os arquivos.**
@@ -37,7 +43,7 @@ Objetivo: em poucos minutos, sair com `dados/empresa.md`, `dados/icp.md` e `dado
    - **`dados/icp.md`:** Setores, Porte, Região, Quem decide (área e cargo), Desqualificadores, Concorrentes a excluir, Padrão dos clientes que fecharam (vazio por enquanto), Padrão de quem não fechou (vazio), Data.
    - **`dados/sinais.md`:** Sinais (em ordem, com o que é, por que indica compra, validade em dias, peso, script ou busca na web), Termos pra vagas, Termos pra busca na web, Anti-sinais (de `referencias/sinais.md`, mais os concorrentes), Data.
 
-7. **Seguir na hora** pro `/lista` no modo "primeira lista". Diga só: "Buscando. Já volto com a planilha."
+7. **Seguir na hora** pro `/lista` no modo "primeira lista". Diga em uma linha o que vai buscar primeiro, com as palavras do negócio dela (ex.: "Começando pelas indústrias de SP que abriram vaga de compras: é aí que o <produto> entra.").
 
 ## Não faça
 

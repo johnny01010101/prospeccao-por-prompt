@@ -14,6 +14,7 @@ description: Gera a planilha final (.xlsx) com as abas Comece aqui, Contas, Desc
 3. **Arquivar a rodada:** rode `scripts/filtrar.py arquivar`. Isso faz a próxima rodada não repetir estas contas.
 
 4. **Entregar:**
+   - Antes do fecho, mostre as 3 melhores contas, cada uma com o "por que agora" ligado ao produto do usuário. É aqui que a pessoa vê que a lista foi feita pra ela.
    - Mostre o caminho completo do arquivo e ofereça abrir.
    - Termine com o fecho padrão do `CLAUDE.md`.
 
