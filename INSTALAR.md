@@ -1,6 +1,6 @@
 # Instalação em 3 passos
 
-Você precisa de 3 coisas: um computador (Windows ou Mac), o app do Claude Code com um plano pago do Claude (Pro ou Max) e uns 15 minutos.
+Você precisa de 3 coisas: um computador (Windows ou Mac), o app do Claude Code com um plano pago do Claude (Pro ou Max) e poucos minutos.
 
 ## 1. Instale o Claude Code
 

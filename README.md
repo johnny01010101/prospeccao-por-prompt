@@ -25,7 +25,7 @@ Só fontes públicas e só dados de empresa. Nada pra assinar, nenhuma chave de 
 
 ## Instalação
 
-Veja **[INSTALAR.md](INSTALAR.md)**: 3 passos, cerca de 15 minutos, sem terminal.
+Veja **[INSTALAR.md](INSTALAR.md)**: 3 passos, poucos minutos, sem terminal.
 
 ## O que você recebe
 
