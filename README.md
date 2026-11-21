@@ -1,6 +1,8 @@
 # Prospecção por Prompt
 
-**O agente que acha as empresas brasileiras com sinais de compra pro seu produto, e diz por que cada uma está pronta pra comprar esta semana.**
+**Seu time prospectando apenas empresas prontas para comprar.**
+
+Um agente no seu Claude acha as empresas brasileiras com sinais de compra pro seu produto e diz por que cada uma está pronta pra comprar esta semana. Tudo isso aumenta a sua taxa de resposta e as reuniões marcadas.
 
 Grátis, roda no seu Claude Code. Você cola um bloco de instalação e o Claude:
 
