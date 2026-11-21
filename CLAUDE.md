@@ -80,6 +80,6 @@ Se o usuário pedir pra atualizar o agente (ex.: "atualiza o agente", "tem vers�
 1. **Se a pasta tiver git:** rode `git pull` e diga em uma linha o que mudou (`git log` desde a versão anterior).
 2. **Se não tiver git:**
    - baixe https://github.com/johnny01010101/prospeccao-por-prompt/archive/refs/heads/main.zip numa pasta temporária;
-   - substitua os arquivos do agente (`CLAUDE.md`, `INSTALAR.md`, `README.md`, `.claude/`, `referencias/`, `scripts/`, `exemplos/`);
+   - substitua os arquivos do agente (`AGENTS.md`, `CLAUDE.md`, `INSTALAR.md`, `INSTALAR-CHATGPT.md`, `README.md`, `.agents/`, `.claude/`, `.codex/`, `referencias/`, `scripts/`, `exemplos/`);
    - apague a pasta temporária.
 3. **Nunca apague nem sobrescreva** `dados/` (os dados do usuário) e `saida/` (as planilhas dele). Depois de atualizar, rode `scripts/ambiente.py`.

@@ -29,6 +29,8 @@ Só fontes públicas e só dados de empresa. Nada pra assinar, nenhuma chave de 
 
 Veja **[INSTALAR.md](INSTALAR.md)**: 3 passos, poucos minutos, sem terminal.
 
+Usa o ChatGPT? É só seguir o **[INSTALAR-CHATGPT.md](INSTALAR-CHATGPT.md)**.
+
 ## O que você recebe
 
 Uma planilha (`saida/lista-AAAA-MM-DD.xlsx`) com 4 abas:
@@ -76,8 +78,10 @@ O agente para no cargo provável de quem decide, de propósito. Pra achar a pess
 
 ```
 CLAUDE.md                 instruções do agente (orquestração e regras)
+AGENTS.md                 as mesmas instruções, na versão pro ChatGPT
 INSTALAR.md               o bloco pra colar no Claude Code
 .claude/skills/           os 6 comandos
+.agents/skills/           os mesmos comandos, na versão pro ChatGPT
 referencias/              sinais, fontes, cargos de quem decide, nota e checagem
 scripts/                  Python, sem dependências (vagas, CNPJ, filtro, planilha, ambiente)
 exemplos/                 dados fictícios pra testar a planilha

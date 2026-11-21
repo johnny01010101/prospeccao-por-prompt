@@ -1,0 +1,3 @@
+# Versão ChatGPT: os scripts consultam fontes públicas (CNPJ e vagas) e precisam de internet.
+[sandbox_workspace_write]
+network_access = true
