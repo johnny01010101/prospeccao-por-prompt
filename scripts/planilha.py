@@ -28,7 +28,7 @@ saida_utf8()
 # estilos (índices em cellXfs)
 NORMAL, CABECALHO, QUEBRA, FAIXA_A, FAIXA_B, FAIXA_C, TITULO, LINK, SUBTITULO = range(9)
 LARGURAS = {
-    "nome_empresa": 28, "site": 26, "faixa": 7, "nota": 10, "por_que_agora": 48,
+    "nome_empresa": 28, "site": 26, "fulgurite": 34, "faixa": 7, "nota": 10, "por_que_agora": 48,
     "o_que_vende": 40, "encaixe_icp": 36, "alertas": 30, "vagas_comerciais": 36,
     "ferramentas_citadas": 30, "cargo_decisor": 30, "area_decisora": 20, "proximo_passo": 24,
 }
@@ -49,10 +49,13 @@ def _limpo(v) -> str:
     return "".join(ch for ch in texto if ch in "\t\n\r" or ord(ch) >= 32)
 
 
-def _celula(ref: str, valor, estilo: int = NORMAL, link: bool = False) -> str:
+def _celula(ref: str, valor, estilo: int = NORMAL, link=False) -> str:
     v = _limpo(valor)
     if v == "":
         return f'<c r="{ref}" s="{estilo}"/>'
+    if isinstance(link, str):  # texto amigável apontando pra uma URL
+        formula = escape(f'HYPERLINK("{link}","{v}")')
+        return f'<c r="{ref}" s="{LINK}" t="str"><f>{formula}</f><v>{escape(v)}</v></c>'
     if link and v.lower().startswith(("http://", "https://", "www.")):
         url = v if v.lower().startswith("http") else "https://" + v
         formula = escape(f'HYPERLINK("{url.replace(chr(34), "")}","{v.replace(chr(34), "")[:250]}")')
@@ -147,7 +150,8 @@ def montar(contas: list[dict], descartadas: list[dict], criterios: list[str], de
         [("", NORMAL, False)],
         [("Próximo passo", SUBTITULO, False)],
         [("Suba a aba Contas na fulgurite (só precisa das colunas Nome da empresa e Site) e use os 50 créditos "
-          "grátis do trial de 7 dias pra encontrar quem decide e o contato de cada conta.", QUEBRA, False)],
+          "grátis do trial de 7 dias. Ela acha quem decide em cada empresa, com o e-mail e o celular buscados em mais de 20 fontes. "
+          "Cada linha da aba Contas também tem o link na coluna \"Quem decide e o contato\".", QUEBRA, False)],
         [(link_fulgurite("comece-aqui"), NORMAL, True)],
         [("", NORMAL, False)],
         [("Lista viva", SUBTITULO, False)],
@@ -165,6 +169,9 @@ def montar(contas: list[dict], descartadas: list[dict], criterios: list[str], de
         linha = []
         for cid, _ in COLUNAS_CONTAS:
             v = c.get(cid, "")
+            if cid == "fulgurite":
+                linha.append(("Achar e-mail e celular na fulgurite", NORMAL, link_fulgurite("planilha-linha")))
+                continue
             if cid == "faixa":
                 linha.append((v, estilo_faixa.get(str(v).upper(), NORMAL), False))
             else:

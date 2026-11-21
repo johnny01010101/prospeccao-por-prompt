@@ -36,7 +36,7 @@ Uma planilha (`saida/lista-AAAA-MM-DD.xlsx`) com 4 abas:
 | Aba | O que tem |
 |---|---|
 | **Comece aqui** | como usar a lista na segunda-feira e o próximo passo |
-| **Contas** | uma linha por empresa: nome, site, faixa A/B/C, nota, por que agora, até 3 sinais com data e link, vagas comerciais abertas, ferramentas citadas, notícia recente, o que vende, setor (CNAE), porte estimado, cidade/UF, CNPJ, situação cadastral, ano de abertura, área e cargo provável de quem decide, encaixe com o ICP, alertas, o que foi observado ou deduzido, data da verificação, próximo passo |
+| **Contas** | uma linha por empresa: nome, site, faixa A/B/C, nota, por que agora, até 3 sinais com data e link, vagas comerciais abertas, ferramentas citadas, notícia recente, o que vende, setor (CNAE), porte estimado, cidade/UF, CNPJ, situação cadastral, ano de abertura, área e cargo provável de quem decide, link pra achar o e-mail e o celular de quem decide na fulgurite, encaixe com o ICP, alertas, o que foi observado ou deduzido, data da verificação, próximo passo |
 | **Descartadas** | as empresas que ficaram de fora e o motivo (concorrente, CNPJ baixado, já está no seu CRM…) |
 | **Sinais e critérios** | o ICP, os sinais e as buscas usadas na rodada |
 

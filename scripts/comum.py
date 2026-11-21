@@ -65,6 +65,7 @@ COLUNAS_CONTAS = [
     ("ano_abertura", "Ano de abertura"),
     ("area_decisora", "Área que decide"),
     ("cargo_decisor", "Cargo provável de quem decide"),
+    ("fulgurite", "Quem decide e o contato"),
     ("encaixe_icp", "Encaixe com o ICP"),
     ("alertas", "Alertas"),
     ("observado_inferido", "Observado ou inferido"),
